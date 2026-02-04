@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  line-height: 1.6;
+  background: linear-gradient(180deg, #071022);
+  color: #333;
+  padding: 20px;
+}
+.container,
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 800px;
+  text-align: center;
+  color: aliceblue;
+  margin: 20px;
+  background: #333;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.6;
+  pointer-events: none;
+}
+h1 {
+      font-family: "Lugrasimo", cursive;
+  color: #0b1220;
+  margin-bottom: 10px;
+}
+p {
+    font-size: 18px;
+     font-family: "Exo 2", sans-serif;
+  margin-bottom: 15px;
+}
+a {
+  color: #0b5cff;
+  text-decoration: none;
+}

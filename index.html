@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Block Explorer</title>
+    <meta name="description" content="Lightweight block explorer built with plain HTML/CSS/JS">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="author.html">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <header class="topbar">
+        <div class="brand">Premium Blockchain Explorer</div>
+        <div class="search-row">
+            <input id="searchInput" placeholder="Search by address / TxHash / Block #" />
+            <button id="searchBtn">Search</button>
+        </div>
+        <div class="controls">
+            <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="left">
+            <div class="panel1">
+                <div class="panel-header">Latest Blocks</div>
+                <div id="blocksList" class="list"></div>
+            </div>
+            <div class="panel2">
+                <div class="panel-header">Recent Transactions (scanned)</div>
+                <div id="txList" class="list"></div>
+            </div>
+        </section>
+
+        <section class="right">
+            <div class="panel detail" id="detailView">
+                <div class="panel-header">Details</div>
+                <div id="detailContent" class="detail-content">Use the search box or click a block/tx.</div>
+            </div>
+            <p><a href="author.html">Dev_Dave</a></p>
+
+        </section>
+    </main>
+
+    <!-- libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- app scripts -->
+    <script src="index.js"></script>
+    <script src="particles.js"></script>
+</body>
+
+</html>
